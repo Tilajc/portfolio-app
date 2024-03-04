@@ -13,13 +13,22 @@ const Header = () => {
         </p>
       </div>
       <div className={styles.aContainer}>
-        <a href="/projects" className={styles.a}>
+        <a
+          href="/projects"
+          className={`${styles.a} ${window.location.pathname === '/projects' ? styles.selected : null}`}
+        >
           Projects
         </a>
-        <a href="/about" className={styles.a}>
+        <a
+          href="/about"
+          className={`${styles.a} ${window.location.pathname === '/about' ? styles.selected : null}`}
+        >
           About Me
         </a>
-        <a href="/contact" className={styles.a}>
+        <a
+          href="/contact"
+          className={`${styles.a} ${window.location.pathname === '/contact' ? styles.selected : null}`}
+        >
           Contact
         </a>
       </div>
