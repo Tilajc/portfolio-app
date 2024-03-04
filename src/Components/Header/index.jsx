@@ -5,33 +5,39 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
-        <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.logo} />
         <div className={styles.infoContainer}>
+          <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.logo} />
           <h1 className={styles.name}>Juan Cruz Tilatti</h1>
-          <p className={styles.role}>
-            {'<'}
-            <span></span>
-          </p>
         </div>
+        <p className={styles.role}>
+          {'<'}
+          <span></span>
+        </p>
       </div>
       <div className={styles.aContainer}>
         <a
           href="/projects"
-          className={`${styles.a} ${window.location.pathname === '/projects' ? styles.selected : null}`}
+          className={
+            window.location.pathname === '/projects' || window.location.pathname == '/'
+              ? styles.selected
+              : styles.a
+          }
         >
-          Projects
+          {window.location.pathname == '/projects' || window.location.pathname == '/'
+            ? '{Projects}'
+            : 'Projects'}
         </a>
         <a
           href="/about"
-          className={`${styles.a} ${window.location.pathname === '/about' ? styles.selected : null}`}
+          className={window.location.pathname === '/about' ? styles.selected : styles.a}
         >
-          About Me
+          {window.location.pathname == '/about' ? '{About}' : 'About'}
         </a>
         <a
           href="/contact"
-          className={`${styles.a} ${window.location.pathname === '/contact' ? styles.selected : null}`}
+          className={window.location.pathname === '/contact' ? styles.selected : styles.a}
         >
-          Contact
+          {window.location.pathname == '/contact' ? '{Contact}' : 'Contact'}
         </a>
       </div>
     </header>
