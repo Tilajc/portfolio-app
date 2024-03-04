@@ -5,14 +5,14 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
+        <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.logo} />
         <div className={styles.infoContainer}>
-          <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.logo} />
           <h1 className={styles.name}>Juan Cruz Tilatti</h1>
+          <p className={styles.role}>
+            {'<'}
+            <span></span>
+          </p>
         </div>
-        <p className={styles.role}>
-          {'<'}
-          <span></span>
-        </p>
       </div>
       <div className={styles.aContainer}>
         <a
@@ -23,21 +23,19 @@ const Header = () => {
               : styles.a
           }
         >
-          {window.location.pathname == '/projects' || window.location.pathname == '/'
-            ? '{Projects}'
-            : 'Projects'}
+          Projects
         </a>
         <a
           href="/about"
           className={window.location.pathname === '/about' ? styles.selected : styles.a}
         >
-          {window.location.pathname == '/about' ? '{About}' : 'About'}
+          About
         </a>
         <a
           href="/contact"
           className={window.location.pathname === '/contact' ? styles.selected : styles.a}
         >
-          {window.location.pathname == '/contact' ? '{Contact}' : 'Contact'}
+          Contact
         </a>
       </div>
     </header>
