@@ -1,0 +1,32 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #212121;
+}
+
+.h2 {
+  color: #fff;
+  font-size: 28px;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  min-width: 365px;
+  max-width: 650px;
+  height: 60%;
+  min-height: 420px;
+  background-color: #253354;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.textContainer p {
+  margin: 20px;
+}

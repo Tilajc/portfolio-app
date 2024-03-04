@@ -4,13 +4,15 @@ import styles from './header.module.css';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.infoContainer}>
-        <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.photo} />
-        <h1 className={styles.name}>Juan Cruz Tilatti</h1>
-        <p className={styles.role}>
-          {'<'}
-          <span></span>
-        </p>
+      <div className={styles.headerContainer}>
+        <img src="img/logo_portfolio.png" alt="Profile Photo" className={styles.logo} />
+        <div className={styles.infoContainer}>
+          <h1 className={styles.name}>Juan Cruz Tilatti</h1>
+          <p className={styles.role}>
+            {'<'}
+            <span></span>
+          </p>
+        </div>
       </div>
       <div className={styles.aContainer}>
         <a

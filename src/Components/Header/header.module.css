@@ -7,13 +7,20 @@
   background-color: #141414;
 }
 
-.infoContainer {
+.headerContainer {
   display: flex;
   align-items: center;
   height: 82px;
 }
 
-.photo {
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
   height: 52px;
   margin: 0 15px 0 20px;
 }
@@ -22,10 +29,11 @@
   font-size: 30px;
   color: #fff;
   word-spacing: -7px;
+  margin: 0;
 }
 
 .role {
-  margin-left: 10px;
+  margin: 0 0 0 10px;
   font-size: 22px;
   min-width: 280px;
   color: #dd9559;
@@ -161,4 +169,10 @@
 
 .selected {
   border-bottom: 2px solid #fff;
+}
+
+@media screen and (min-width: 650px) {
+  .infoContainer {
+    flex-direction: row;
+  }
 }
