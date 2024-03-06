@@ -4,9 +4,13 @@ import styles from './footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>You can check my social media here!</p>
-      <img src="img/github.png" alt="Github Logo" className={styles.img} />
-      <img src="img/linkedin.png" alt="Linkedin Logo" className={styles.img} />
+      <p>Check my social media here!</p>
+      <a href="https://github.com/Tilajc">
+        <img src="img/github.png" alt="Github Logo" className={styles.img} />
+      </a>
+      <a href="https://www.linkedin.com/in/tilatti-jc/">
+        <img src="img/linkedin.png" alt="Linkedin Logo" className={styles.img} />
+      </a>
     </footer>
   );
 };

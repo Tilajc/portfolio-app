@@ -6,6 +6,7 @@
   height: 100%;
   background-color: #212121;
   color: #f2f3f4;
+  font-size: 18px;
 }
 
 .emailContainer {
@@ -13,7 +14,7 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  background-color: #a0a0af;
+  background-color: #f2f3f4;
   color: #000;
   border-radius: 4px;
 }
@@ -25,7 +26,42 @@
 .copy {
   height: 25px;
   margin: 0 0 0 4px;
+  padding: 3px;
   border-radius: 4px;
-  background-color: #a0a0af;
+  background-color: #8ca0c6;
   cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  width: 60%;
+  min-width: 365px;
+  max-width: 650px;
+  height: 60%;
+  min-height: 390px;
+  background-color: #253354;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form textarea,
+.form label {
+  margin: 10px;
+}
+
+.form div {
+  margin: 10px 0;
+}
+
+.form textarea {
+  height: 80%;
+  min-height: 200px;
+}
+
+.form input,
+.form textarea {
+  border-radius: 5px;
 }
