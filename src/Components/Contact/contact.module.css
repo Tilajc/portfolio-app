@@ -1,0 +1,31 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #212121;
+  color: #f2f3f4;
+}
+
+.emailContainer {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #a0a0af;
+  color: #000;
+  border-radius: 4px;
+}
+
+.emailContainer p {
+  margin: 3px;
+}
+
+.copy {
+  height: 25px;
+  margin: 0 0 0 4px;
+  border-radius: 4px;
+  background-color: #a0a0af;
+  cursor: pointer;
+}

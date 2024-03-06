@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100%;
   background-color: #212121;
 }
 
 .h2 {
-  color: #fff;
+  color: #e8d44d;
   font-size: 28px;
 }
 
@@ -22,7 +22,7 @@
   height: 60%;
   min-height: 420px;
   background-color: #253354;
-  color: #fff;
+  color: #f2f3f4;
   border-radius: 10px;
   font-size: 18px;
 }
