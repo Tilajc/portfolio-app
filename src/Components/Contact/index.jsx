@@ -25,16 +25,20 @@ const Contact = () => {
       </div>
       <p>or send me an email by the form</p>
       <form action="submit" className={styles.form}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" />
+        <div className={styles.inputContainer}>
+          <div className={styles.labInpContainer}>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div className={styles.labInpContainer}>
+            <label htmlFor="name">Name</label>
+            <input type="text" id="name" />
+          </div>
+          <label htmlFor="message" className={styles.message}>
+            Message
+          </label>
+          <textarea id="message" className={styles.textarea}></textarea>
         </div>
-        <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" />
-        </div>
-        <label htmlFor="message">Message</label>
-        <textarea id="message"></textarea>
       </form>
     </section>
   );
