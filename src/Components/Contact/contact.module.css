@@ -6,20 +6,33 @@
   height: 100%;
   background-color: #212121;
   color: #f2f3f4;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.emailContainer {
+.emailCopyContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 250px;
+}
+
+.emailButton {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
+  height: 31px;
+  font-size: 20px;
   background-color: #f2f3f4;
   color: #000;
   border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-.emailContainer p {
+.emailButton p {
   margin: 3px;
 }
 
@@ -28,8 +41,31 @@
   margin: 0 0 0 4px;
   padding: 3px;
   border-radius: 4px;
-  background-color: #8ca0c6;
-  cursor: pointer;
+}
+
+.emailButton:hover {
+  background-color: #e2e3e4;
+}
+
+.emailButton:active {
+  background-color: #e8d44d;
+}
+
+.emailCopied {
+  display: inline-block;
+  position: absolute;
+  right: inherit;
+  bottom: -30px;
+  font-size: 18px;
+  color: #e8d44d;
+}
+
+.none {
+  display: none;
+}
+
+.vibrate {
+  animation: vibrate 0.13s infinite;
 }
 
 .form {
@@ -82,4 +118,22 @@
   height: 80%;
   border-radius: 5px;
   font-size: 17px;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translateX(-2px);
+  }
+  25% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
 }
