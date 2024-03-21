@@ -7,8 +7,8 @@ const About = () => {
       <h2 className={styles.h2}>About Me</h2>
       <div className={styles.textContainer}>
         <p>
-          Hello! My name is Juan Cruz, I am a system ingenieer student. And I{"'"}m working as a
-          freelance software developer.
+          Hello! My name is Juan Cruz, I am a system ingenieer student. Working as a freelance
+          fullstack developer.
         </p>
         <p>
           I love coding &#x1F4BB;, playing video games &#x1F3AE;, swimming &#x1F3CA;, and cats

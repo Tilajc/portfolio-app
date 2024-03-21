@@ -25,9 +25,10 @@
   padding: 0;
   height: 31px;
   font-size: 20px;
-  background-color: #f2f3f4;
-  color: #000;
-  border-radius: 4px;
+  background-color: #212121;
+  color: #f2f3f4;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
 }
@@ -41,14 +42,11 @@
   margin: 0 0 0 4px;
   padding: 3px;
   border-radius: 4px;
+  filter: invert(94%) sepia(6%) saturate(34%) hue-rotate(169deg) brightness(101%) contrast(85%);
 }
 
 .emailButton:hover {
-  background-color: #e2e3e4;
-}
-
-.emailButton:active {
-  background-color: #e8d44d;
+  background-color: #323232;
 }
 
 .emailCopied {
