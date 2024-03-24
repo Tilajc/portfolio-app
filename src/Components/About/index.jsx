@@ -15,8 +15,8 @@ const About = () => {
           &#x1F431;.
         </p>
         <p>
-          Currently, I am learning unity, and cybersecurity, and I am open to learn new
-          technologies.
+          Currently, I am learning unity, cybersecurity, and of course open to learn new
+          technologies!
         </p>
         <p>Thank you for checking out my portfolio!</p>
       </div>
